@@ -1,0 +1,21 @@
+[package]
+name = "web-assembly-and-rust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+# during compilation rust produces a crate we are telling rust to add support for other langauges
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasm-bindgen = "0.2.86"
+base64 = "0.21.1"
+image = "0.23.14"
+
+# partially import only web-sys crate
+[dependencies.web-sys]
+version = "0.3.4"
+features = ["console"] # we need only console feature
+

@@ -1,0 +1,31 @@
+{
+  "name": "web-assembly-and-rust",
+  "version": "1.0.0",
+  "description": "A language for the web to run apps at near native speeds.",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack serve --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shahtr1/web-assembly-and-rust.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shahtr1/web-assembly-and-rust/issues"
+  },
+  "homepage": "https://github.com/Shahtr1/web-assembly-and-rust#readme",
+  "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^5.5.1",
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
+  },
+  "dependencies": {
+    "wasm-pack": "^0.11.1"
+  }
+}
